@@ -1,0 +1,7 @@
+# Build & cache folders
+__pycache__/
+*.pyc
+build/
+dist/
+*.bak
+*.lck
