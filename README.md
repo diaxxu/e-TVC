@@ -106,14 +106,15 @@ A: A 6S prop spinning at full thrust is no joke. Always do tied-down static test
 ## COOL Pics
 
 <img width="924" height="776" alt="Capture d&#39;écran 2026-07-17 085241" src="https://github.com/user-attachments/assets/377c04c7-b3b2-4ada-8653-ffde0044cbec" />
-
+<img width="790" height="796" alt="Capture d&#39;écran 2026-07-16 232121" src="https://github.com/user-attachments/assets/69ce79c4-de3b-4de5-a6fb-6fcae2736dd3" />
+<img width="1121" height="719" alt="Capture d&#39;écran 2026-07-20 134314" src="https://github.com/user-attachments/assets/0f304a4b-b916-4936-9c50-e028d89903a8" />
 
 
 - 
 
 ## Render
 ![Alt text](PICS/render.png)
-<img width="790" height="796" alt="Capture d&#39;écran 2026-07-16 232121" src="https://github.com/user-attachments/assets/69ce79c4-de3b-4de5-a6fb-6fcae2736dd3" />
+
 
 
 
