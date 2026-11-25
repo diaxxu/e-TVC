@@ -125,11 +125,20 @@ A: A 6S prop spinning at full thrust is no joke. Always do tied-down static test
 - Clean power distribution on a 6S LiPo rail ( moderate )
 
 ## BoM (secret sauce!!)
-Component | Specification | Quantity | Price | Link
---- | --- | --- | --- | ---
-| | | |
-| | | |
-| | | |
+| Product | quantity | price(in rmb) | info |
+| :--- | :---: | :---: | :--- |
+| Counter rotating motor | 1 | 211 | CRM2405 1500kv |
+| servo motor | 2 | 55.3 | EMAX ES09MD |
+| flight controller | 1 | 1800 | jlcpcb and pcba |
+| carbon fiber tube | 4 | 12.15 | 7mm and 1.5m |
+| ESC | 2 | 66 | 50amps 6s |
+| battery | 1 | 61.22 | 6s 650mAh |
+| gps | 1 | 54.23 | m10 |
+| receiver | 1 | 38.5 | ELRS 2.4GHz |
+| servo CHUTE | 1 | 15.08 | MG995 |
+| Propeller | 1 | 2.25 | counter rotax propeller |
+| buffer | 1 | 60 | wire |
+| **Total** | | **2,533.48 RMB** | **Total(usd): 380.15$**
 
 ## Credits
 A big thanks to Hack Club and YSWS for making this possible without them, all this project would have been just a .step file and a matlab script
