@@ -1,0 +1,18 @@
+Product,quantity,price(in rmb),info
+Counter rotating motor,1,211,CRM2405 1500kv
+servo motor,2,55.3,EMAX ES09MD
+flight controller ,1,1800,jlcpcb and pcba
+carbon fiber tube,4,12.15,7mm and 1.5m
+ESC,2,66,50amps 6s
+battery,1,61.22,6s 650mAh
+gps,1,54.23,m10
+receiver,1,38.5,ELRS 2.4GHz
+servo CHUTE,1,15.08,MG995 
+Propeller,1,2.25,counter rotax propeller
+buffer,1,60,wire
+,,,
+,,,
+,,,
+,,,
+,,,"Total: 2,533.48 RMB"
+,,,Total(usd): 380.15$
