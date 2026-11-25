@@ -3,7 +3,7 @@
 ## Overview
 This project is a custom electric TVC (Thrust Vector Control) rocket and vertical landing platform. 
 Instead of solid rocket motors or pyro charges, it uses a counter rotating brushless motor with a prop mounted on a dual-axis gimbal to vector thrust and balance itself in the air ( kinda like a SpaceX Falcon 9 landing, just electric and smaller ). I built this entire project solo from scratch from the airframe or gimbal or custom flight controller PCB and simulation so i can learn how real aerospace control systems and flight computers work.
-
+![Alt text](PICS/craft.png)
 ## Rocket Features
 - Custom modular airframe with landing legs and internal avionics bays
 - Dual-axis mechanical TVC gimbal
@@ -25,6 +25,7 @@ i made it to be or have :
 - Thrust-to-Weight Ratio: ~1.67
 - TVC Moment Arm: 30 cm (0.30 m)
 - Control Loop Speed: 200 Hz
+![Alt text](PICS/tvc.png)
 
 ## Propulsion & Power System
 - Motor / Prop: Electric brushless setup pushing 20 N max thrust
@@ -32,17 +33,17 @@ i made it to be or have :
 - Regulator: MP2451DT-LF-Z step-down buck converter (for 3.3v)
 - Servos: 2x TVC gimbal servos + 1x top parachute servo 
 - ESC: 2x PWM ESC headers
-
+![Alt text](PICS/fc.png)
 ## Avionics
 I didnt want to buy an off-the-shelf FC so i routed my own PCB around an STM32H7:
-- MCU: STM32H743VIT6 (Cortex-M7 @ 480 MHz)
+- MCU: STM32H743VIT6 (Cortex-M7 running at 480 MHz wow speedy)
 - IMU: ICM-42688-P (low-noise 6-axis gyro)
-- Baro : DPS310 (cm-level altitude precision)
+- Baro : DPS310 
 - GPS : External GPS via JST connector 
 - Wireless & RC: ESP32-C3 (Wi-Fi / Bluetooth) + ELRS receiver
 - Storage: Micro-SD slot over SDMMC for fast blackbox logging
 - Extras: USB-C, SWD debug pins, buzzer, spare ADC and USART connectors
-
+![Alt text](PICS/fc1.png)
 ## Firmware
 The flight code runs a cascaded PID setup at 200Hz. Basically a chain of PID loops:
 1. Position PID looks at target X/Y/Z vs real position and outputs target velocity
@@ -56,6 +57,7 @@ To make sure the sim wasnt just idealized fake math, i injected real hardware li
 - 0.3° servo deadband to simulate real mechanical gear slop and stiction
 - Integer microsecond PWM discretization for the ESC signal (e.g. 1450us instead of smooth decimals)
 - Random wind gusts, IMU gyro noise, actuator slew lag, low-pass filtered D-term, and integral anti-windup clamping
+![Alt text](PICS/simu.png)
 
 ## Firmware Flashing Instructions
 1. Install Required Software
@@ -83,9 +85,9 @@ To make sure the sim wasnt just idealized fake math, i injected real hardware li
 
 attention! Firmware flashing and bench testing must always be done without propellers installed and without the 6S battery plugged in unless tied down.
 
-## Schematic ( wire diagram )
+## Schematic 
 
-
+![Alt text](PICS/schema.png)
 
 ## FAQ
 Q: Can this rocket really hover and land itself?
@@ -103,13 +105,14 @@ A: A 6S prop spinning at full thrust is no joke. Always do tied-down static test
 
 ## COOL Pics
 
+<img width="924" height="776" alt="Capture d&#39;écran 2026-07-17 085241" src="https://github.com/user-attachments/assets/377c04c7-b3b2-4ada-8653-ffde0044cbec" />
 
 
 
 - 
 
 ## Render
-
+![Alt text](PICS/render.png)
 
 
 
